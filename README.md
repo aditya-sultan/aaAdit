@@ -16,3 +16,5 @@ Buat direktory project praktikum pertama dengan nama latihan1
 $ mkdir latihan1 $ cd latihan1
 Sehingga terbentuk satu direktori baru dibawahnya, selanjutnya masuk kedalam direktori tersebut dengan perintah cd (change directory)
 direktory aktif menjadi: d:\labs_pemrograman1\latihan1
+![Gitconfig](https://github.com/aditya-sultan/aaAdit/blob/master/Capture.PNG)
+File README.md berhasil dibuat.
