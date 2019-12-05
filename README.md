@@ -1,9 +1,11 @@
 # latihan 1
 # Tutorial Cara menggunakan git
 # Instalasi Git
+
 pertama download terlebih dahulu git nya di (git-scm.com)
 sesuaikan komputer anda tapi saya saran kan memakai yg 64bit jika kalian bisa
 selamat kalian sudah selesai mengisntal git .
+
 # Menambahkan Config
 pada saat pertama kali menggunakan git,perlu dilakukan konfigurasi username dan email
 konfigurasi ini bisa dilakukan untuk global repostiry atau individual repository.
@@ -18,3 +20,50 @@ Sehingga terbentuk satu direktori baru dibawahnya, selanjutnya masuk kedalam dir
 direktory aktif menjadi: d:\labs_pemrograman1\latihan1
 ![Gitconfig](https://github.com/aditya-sultan/aaAdit/blob/master/Capture.PNG)
 File README.md berhasil dibuat.
+
+# Membuat repo lokal 1.2
+jalankan perintah git init,untuk membuat repo lokal
+$ git init
+Repository baru berhasil di inisialisasi, dengan terbentuknya satu direktori hidden dengan nama .git
+Pada direktori tersebut, semua perubahan pada working directory akan disimpan.
+
+# Menambahkan File baru pada repository
+Untuk membuat file dapat menggunakan text editor, lalu menyimpan filenya pada direktori aktif (repository)
+disini kita akan coba buat satu file bernama README.md (text file)
+$ echo “#Latihan 1” >> README.md
+File README.md berhasil dibuat.
+![Gitconfig](https://github.com/aditya-sultan/aaAdit/blob/master/Capture2.PNG)
+
+# Menambahkan File baru pada repository
+Untuk menambahkan file yang baru saja dibuat tersebut gunakan perintah git add.
+File README.md berhasil ditambahkan.
+$ git add README.md
+![Gitconfig](https://github.com/aditya-sultan/aaAdit/blob/master/Capture3.PNG)
+
+# Commit (Menyimpan perubahan ke database)
+Untuk menyimpan perubahan yang ada kedalam database repository local, gunakan perintah git commit -m “komentar commit”
+Perubahan berhasil disimpan.
+$ git commit -m “File pertama saya”
+![Gitconfig](https://github.com/aditya-sultan/aaAdit/blob/master/Capture4.PNG)
+
+# Membuat repository server
+Server reopsitory yang akan kita gunakan adalah http://github.com
+Anda harus membuat akun terlebih dahulu.
+Pada laman github, klik tombol start a project dan Dari menu (icon +) klik New Repository
+
+# Menambahkan Remote Repository
+Remote Repository merupakan repository server yang akan digunakan untuk menyimpan setiap perubahan pada local repository, sehingga dapat diakses oleh banyak user.
+Untuk menambahkan remote repository server, gunakan perintah git remote add origin [url]
+$ git remote add origin https://github.com/.........
+![Gitconfig](https://github.com/aditya-sultan/aaAdit/blob/master/Capture5.PNG)
+
+# Push (Mengirim perubahan ke server)
+Untuk mengirim perubahan pada local repository ke server gunakan perintah git push.
+Perintah ini akan meminta memasukkan username dan password pada akun github.com
+$ git push -u origin master
+![Gitconfig](https://github.com/aditya-sultan/aaAdit/blob/master/Capture6.PNG)
+
+# Clone Repository
+Clone repository, pada dasarnya adalah meng-copy repository server dan secara otomatis membuat satu direktory sesuai dengan nama repositorynya (working directory).
+Untuk melakukan cloning, gunakan perintah git clone [url]
+![Gitconfig](https://github.com/aditya-sultan/aaAdit/blob/master/Capture7.PNG)
